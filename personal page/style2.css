@@ -1,0 +1,56 @@
+.back-image {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("outerspace2.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;*/
+  background-color: black;
+}
+
+.card {
+    box-shadow: 0 40px 80px 0 rgba(221, 221, 221, 0.2);
+    background-color: rgb(0, 0, 0);
+    max-width: 400px;
+    max-height: 600px ;
+    margin: auto ;
+    text-align: center;
+    font-family: Verdana;
+  }
+  
+  .title ,h2 ,p{
+    color: grey;
+    font-size: 22px;
+    font-family: Verdana;
+   
+  }
+
+  h1 {
+    font-family: Verdana;
+    color: grey;
+    font-size: 40px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
