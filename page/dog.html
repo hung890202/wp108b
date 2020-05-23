@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+<style>
+@import url(./style2.css);
+@import url(./dog.css);
+</style>
+
+</head>
+<body>
+  
+<div id="topbar">
+    <a href="dog.html">Dog</a>
+    <a onclick="document.getElementById('box1').style.display='block'" style="width:auto;">...</a>
+
+</div>
+
+<div class="icon">
+    <a href="https://line.me/ti/p/NdZd_5Cxva"> <i class="socicon-line"> </i> </a> 
+    <a href="https://www.facebook.com/bir.hung.10"> <i class="socicon-facebook"> </i> </a>  
+    <a href="https://www.instagram.com/hung890202/"> <i class="socicon-instagram"> </i> </a>  
+    <a href="https://www.youtube.com/watch?v=Q00Ycy-9_n8"> <i class="socicon-youtube"> </i> </a> 
+</div>
+
+<div id="box1" class="modal">
+  <form class="modal-content" action="/action_page.php" method="post">
+  <span onclick="document.getElementById('box1').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div id="box2">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="mylife.html">My Life</a>
+      <span href="dog.html" class="special">Dog</span>
+    </div>
+  </form>
+</div>
+  
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2020/02/22</h2>
+      <span class="text">&#127760 Houjin River Embankment Trail</span>
+      <div class="img">
+        <img src="IMG_9985.jpeg" alt="Duke" style="width:100%">
+      </div>
+      <p>Duke is my dog.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2019/05/10</h2>
+      <span class="text">&#127760 Kaohsiung National Stadium</span>
+      <div class="img">
+        <img src="IMG_4537.jpeg" alt="Duke" style="width:100%">
+      </div>
+      <p>Duke like running.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2020/02/18</h2>
+      <span class="text">&#127760 Houjin River Embankment Trail</span>
+      <div class="img">
+        <img src="IMG_9944.jpeg" alt="Duke" style="width:100%">
+      </div>
+      <p>I'm walking dog with Duke.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2019/10/10</h2>
+      <span class="text">&#127760 my uncle's house</span>
+      <div class="img">
+        <img src="592381488.987571.JPG" alt="Duke" style="width:100%">
+      </div>
+      <p>Duke is waiting for...some food.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2019/03/14</h2>
+      <span class="text">&#127760 our house</span>
+      <div class="img">
+        <img src="IMG_4163.jpeg" alt="Duke" style="width:100%">
+      </div>
+      <p>Duke lie on my legs.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018/12/23</h2>
+      <span class="text">&#127760 our house</span>
+      <div class="img">
+        <img src="IMG_4366.jpeg" alt="Duke" style="width:100%">
+      </div>
+      <p>Duke lie on the sofa.</p>
+    </div>
+  </div>
+</div>
+
+<!--javascript-->
+ <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topbar").style.top = "0";
+    } else {
+      document.getElementById("topbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script> 
+  <script>  // Get the modal
+  var modal = document.getElementById('box1');
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+    
+    
+  
+
+</body>
+</html>
+

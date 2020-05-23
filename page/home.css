@@ -1,0 +1,60 @@
+.bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9;
+    min-height: 650px;
+  }
+  
+  
+  .bgimg-2 {
+    background-image: url("IMG_8353.jpeg");
+  }
+  
+  .bgimg-3 {
+    background-image: url("IMG_9980.jpeg");
+  }
+
+  .bgimg-4 {
+    background-image: url("IMG_4537.jpeg");
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span {
+    letter-spacing: 5px;
+    background-color:transparent;
+    font-size:30px;color: #f7f7f7;
+  }
+
+  .parallaxtext {
+    position:relative;
+    color:#ddd;
+    background-color:#282E34;
+    text-align: justify;
+    padding:50px 80px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+<style>
+@import url(./style2.css);
+@import url(./mylife.css);
+</style>
+
+</head>
+<body>
+  
+<div id="topbar">
+    <a href="mylife.html">My Life</a>
+    <a onclick="document.getElementById('box1').style.display='block'" style="width:auto;">...</a>
+
+</div>
+
+<div class="icon">
+    <a href="https://line.me/ti/p/NdZd_5Cxva"> <i class="socicon-line"> </i> </a> 
+    <a href="https://www.facebook.com/bir.hung.10"> <i class="socicon-facebook"> </i> </a>  
+    <a href="https://www.instagram.com/hung890202/"> <i class="socicon-instagram"> </i> </a>  
+    <a href="https://www.youtube.com/watch?v=Q00Ycy-9_n8"> <i class="socicon-youtube"> </i> </a> 
+</div>
+
+<div id="box1" class="modal">
+  <form class="modal-content" action="/action_page.php" method="post">
+  <span onclick="document.getElementById('box1').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div id="box2">
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <span href="mylife.htmll" class="special">My Life</span>
+      <a href="dog.html">Dog</a>
+       
+    </div>
+  </form>
+</div>
+  
+<video autoplay muted loop id="myVideo">
+  <source src="1080P-2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Something Dlicacies In My Life </h1>
+  <p></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+
+ 
+<!--javascript-->
+ <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topbar").style.top = "0";
+    } else {
+      document.getElementById("topbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script> 
+  <script>  // Get the modal
+  var modal = document.getElementById('box1');
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+    
+  
+
+</body>
+</html>
+

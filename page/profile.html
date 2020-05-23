@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+<style>
+@import url(./style2.css);
+@import url(./profile.css);
+</style>
+
+</head>
+<body>
+  
+<div id="topbar">
+    <a href="profile.html">Profile</a>
+    <a onclick="document.getElementById('box1').style.display='block'" style="width:auto;">...</a>
+
+</div>
+
+<div class="icon">
+    <a href="https://line.me/ti/p/NdZd_5Cxva"> <i class="socicon-line"> </i> </a> 
+    <a href="https://www.facebook.com/bir.hung.10"> <i class="socicon-facebook"> </i> </a>  
+    <a href="https://www.instagram.com/hung890202/"> <i class="socicon-instagram"> </i> </a>  
+    <a href="https://www.youtube.com/watch?v=Q00Ycy-9_n8"> <i class="socicon-youtube"> </i> </a> 
+</div>
+
+<div id="box1" class="modal">
+  <form class="modal-content" action="/action_page.php" method="post">
+  <span onclick="document.getElementById('box1').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div id="box2">
+      <a href="home.html">Home</a>
+      <span href="profile.html" class="special">Profile</span>
+      <a href="mylife.html">My Life</a>
+      <a href="dog.html">Dog</a>
+    </div>
+  </form>
+</div>
+
+<div class="card">
+  <img src="IMG_8353.jpeg" alt="Anyhony" style="width:100%">
+  <h1>Anthony</h1>
+  <p>Anyhony Studio CEO</p>
+  <p>Computer Science and Information Engineering</p>
+  <div>
+    <h2>cooming soon ...</h2>
+  </div>
+</div> 
+
+<!--javascript-->
+ <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topbar").style.top = "0";
+    } else {
+      document.getElementById("topbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script> 
+  <script>  // Get the modal
+  var modal = document.getElementById('box1');
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+    
+    
+  
+
+</body>
+</html>
+

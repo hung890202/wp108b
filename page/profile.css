@@ -1,0 +1,20 @@
+.card {
+  background-color: rgb(255, 255, 255);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  transform: translateY(10%);
+}
+
+p {
+  color: grey;
+  font-size: 18px;
+  padding: 18px;
+}
+
+h2 {
+    text-align: center;
+    transform: translateY(10%);
+}
+
