@@ -31,6 +31,7 @@
       <a href="profile.html">Profile</a>
       <a href="mylife.html">My Life</a>
       <span href="dog.html" class="special">Dog</span>
+      <a href="blog.html">Blog</a>
     </div>
   </form>
 </div>
@@ -99,26 +100,8 @@
 </div>
 
 <!--javascript-->
- <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("topbar").style.top = "0";
-    } else {
-      document.getElementById("topbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  </script> 
-  <script>  // Get the modal
-  var modal = document.getElementById('box1');
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
+<script src="topbar.js"></script>  
+ <script src="getmodal.js"></script>
     
     
   

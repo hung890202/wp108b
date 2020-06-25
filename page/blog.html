@@ -4,14 +4,14 @@
 <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
 <style>
 @import url(./style2.css);
-@import url(./profile.css);
+@import url(./blog.css);
 </style>
 
 </head>
 <body>
   
 <div id="topbar">
-    <a href="profile.html">Profile</a>
+    <a href="blog.html">Blog</a>
     <a onclick="document.getElementById('box1').style.display='block'" style="width:auto;">...</a>
 
 </div>
@@ -28,30 +28,26 @@
   <span onclick="document.getElementById('box1').style.display='none'" class="close" title="Close Modal">&times;</span>
     <div id="box2">
       <a href="home.html">Home</a>
-      <span href="profile.html" class="special">Profile</span>
+      <a href="profile.html">Profile</a>
       <a href="mylife.html">My Life</a>
       <a href="dog.html">Dog</a>
-      <a href="blog.html">Blog</a>
+      <span href="blog.html" class="special">Blog</span>
     </div>
   </form>
 </div>
 
-<div class="card">
-  <img src="IMG_8353.jpeg" alt="Anyhony" style="width:100%">
-  <h1>Anthony</h1>
-  <p>Anyhony Studio CEO</p>
-  <p>Computer Science and Information Engineering</p>
-  <div>
-    <h2>cooming soon ...</h2>
-  </div>
+<div class="contain">
+  <ul id="list"></ul>
+</div>
+
+<div class="wrap">
+  <footer class="footer">
+    <textarea id="text" placeholder="Type message.."></textarea>
+    <input type="button" value="Add comment">
+  </footer>
 </div> 
 
-<!--javascript-->
-<script src="topbar.js"></script>  
+</style>
+<script type="text/javascript" src="blog.js"></script>
+<script src="topbar.js"></script> 
 <script src="getmodal.js"></script>
-    
-  
-
-</body>
-</html>
-

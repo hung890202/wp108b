@@ -24,14 +24,14 @@
 </div>
 
 <div id="box1" class="modal">
-  <form class="modal-content" action="/action_page.php" method="post">
+  
   <span onclick="document.getElementById('box1').style.display='none'" class="close" title="Close Modal">&times;</span>
     <div id="box2">
       <a href="home.html">Home</a>
       <a href="profile.html">Profile</a>
       <span href="mylife.htmll" class="special">My Life</span>
       <a href="dog.html">Dog</a>
-       
+      <a href="blog.html">Blog</a>
     </div>
   </form>
 </div>
@@ -50,26 +50,10 @@
 
  
 <!--javascript-->
- <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("topbar").style.top = "0";
-    } else {
-      document.getElementById("topbar").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  </script> 
-  <script>  // Get the modal
-  var modal = document.getElementById('box1');
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
+ <script src="topbar.js"></script> 
+
+ <script src="getmodal.js"></script>
+
   <script>
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
