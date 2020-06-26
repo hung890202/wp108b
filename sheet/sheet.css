@@ -1,0 +1,36 @@
+* {
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
+legend {
+    font-size: 27px;
+}
+
+
+textarea {
+  width: 50%;
+  height: 100px;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  border: 50%;
+}
+
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+.main {
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url(./sheet.css);
+</style>
+</head>
+<body>
+<div class="main">
+    <form>
+        <fieldset>
+            <legend>profile</legend>
+            <label for="username">account:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br/>
+            <div class="sex">
+                <label for="gender">sex:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="male">female</label>
+            </div>
+            <div class="blood-type">
+                <label>blood type:</label>
+                <select id="cars" name="cars">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+                </select>
+            </div>
+            
+            <label for="birthday">birthday:</label><br/>
+            <input type="date" id="birthday" name="birthday">
+            <br/>
+            <label for="email">mail:</label><br>
+            <input type="email" id="email" name="email" required></br>
+            <label>comment:</label><br/>
+            <textarea name="message">
+        
+            </textarea>
+            <button>sign up</button>
+            
+        </fieldset>
+      </form>      
+</div>
+</body>
+</html>
